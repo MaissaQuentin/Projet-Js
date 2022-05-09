@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java</title>
+</head>
+<body>
+  <h1>Page de test JavaScript</h1>
+  <p id="num1">Une ligne de texte</p>
+  <p>Une autre ligne de texte</p>
+  <p>Et une derniere</p>
+
+  <form method="get">
+    <input name="nom" type="text">
+    <input name="prenom" type="text">
+    <input type="button" value="Envoyer" onclick="filtering()">
+    
+  </form>
+  <script src="Coloring.js"></script>
+  <script src="Array.js"></script>
+  <script src="formfilter.js"></script>
+  <script>
+      let name = 'Jack';
+      if(true){
+         name = 'John'
+      }
+      
+      document.write("Bonjour " +name);
+  </script>
+  <script>
+    let message = prompt('entrez un nombre').toLowerCase().replaceAll(' ','');
+    let nombre = parseFloat(message);
+    if(!isNaN(nombre))
+  {
+    if(nombre === 6.6){
+       alert(nombre.toString());
+    }
+    else {
+        alert("pas similaire");
+    } 
+  }
+    else{
+      alert('valeur incorrecte');
+    }
+  </script>
+  <script>
+    let lsP = document.getElementsByTagName('p')
+
+    let compteur = 0;
+    while(compteur<lsP.length){
+      alert('while :  '+compteur);
+      compteur++;
+    }
+  </script>
+  <script>
+    let valeurPrompt = prompt('entrez un message');
+    (valeurPromptt==="coucou")?alert('coucou'):alert('probleme');
+    let reponse
+    switch(valeurPrompt){
+      
+      case 'bonjour':
+          reponse='bonjour a toi';
+          break
+
+      case 'aurevoir':
+        break
+
+      case 'ciao': 
+        reponse='byebye';
+        break
+
+        default:
+            reponse='aucun message'
+    }
+  </script>
+</body>
+</html>
